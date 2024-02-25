@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800;900&display=swap');
+
+
+:root {
+  --primary-brand-color: #20A700;
+  --secondary-brand-color: #E6BAA3;
+  --tertiary-brand-color: #F6EDD9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+span {
+  color: var(--primary-brand-color);
+}
+
+.primary {
+  color: var(--primary-brand-color);
+}
+
+button.brand-secondary {
+  background-color: var(--secondary-brand-color) !important;
+  /* color: white; */
+}
+
+#heart{
+  color: rgb(204, 34, 34);
+}
+
+#star{
+  color: rgb(214, 101, 26);
+}
+
+/* =================== NAVBAR ===================  */
+#navbar {
+  color: var(--primary-brand-color);
+}
+
+#first-title {
+  color: var(--primary-brand-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+#second-title{
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+
+
+
+/* =================== REGISTER ===================  */
+.register_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =================== LOGIN ===================  */
+.img_box {
+  width: 80%;
+  height: 600px;
+  object-fit: cover;
+}
+
+#login-form{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =================== HERO ===================  */
+
+#hero button {
+  background-color: var(--primary-brand-color);
+}
+
+.hero_img {
+  height: auto;
+  width: 90%;
+  object-fit: contain;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+#policy{
+  background-color: var(--tertiary-brand-color);
+}
+ 
+/* =================== PROMO ===================  */
+
+.promo_box {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: url("./images/promo.avif");
+  background-size: cover;
+  background-position: 50%;
+}
+
+.faded {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(255,255,255,0) linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,.97) 80%) repeat scroll 0 0;
+}
+
+#btn-promo{
+  background-color: var(--primary-brand-color);
+  color: white;
+}
+
+
+
+.promo_img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background:rgba(255,255,255,0) linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,.97) 80%) repeat scroll 0 0;
+}
+
+
+
+/* =================== SALE AND CATEGORIES ===================  */
+
+.btn-cat-group{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 12rem;
+  margin-left: 100px;
+}
+
+.btn-cat{
+  height: 4rem;
+  background-color: white;
+  color: black;
+}
+
+#carousel{
+  width: 100%;
+}
+
+#sale{
+   max-width: 100%;
+   max-height: auto;
+   object-fit: contain;
+   object-position: top;
+ }
+ 
+ .img{
+   max-width: 100%;
+   max-height: 100%;
+   width: auto;
+   height: auto;
+   object-fit: cover;
+ }
+
+/* =================== PRODUCTS ===================  */
+
+
+#view-title{
+  margin: 0%;
+  border-radius: 10px;
+  background-color: var(--primary-brand-color);
+}
+
+.product_box {
+  position: relative;
+}
+
+.product_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .product_box_items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    display: grid;
+    align-items: flex-end;
+    padding: 1.5rem 1.25rem;
+    transition: 0.3s;
+} */
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.4); /* Black see-through */
+  transition: .5s ease;
+  color: #f1f1f1;
+  opacity:0;
+  padding: 20px;
+}
+
+.product_box:hover .overlay {
+  opacity: 1;
+}
+
+/* =================== FOOTER ===================  */
+
+#socmed{
+  flex-direction: column;
+  align-items: end;
+}
+
+#first-footer {
+  color: var(--primary-brand-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+#second-footer{
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+#footer{
+  background-color: var(--tertiary-brand-color);
+}
